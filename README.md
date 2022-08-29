@@ -47,7 +47,7 @@ git init
 
 git add (directorio)
 
-git comit o git comit -m ("name")
+git commit o git commit -m ("name")
 
 git push (directorio)
 ```
