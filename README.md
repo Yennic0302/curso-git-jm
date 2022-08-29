@@ -52,7 +52,7 @@ git commit o git commit -m ("name")
 git remote add origin (url)
 ```
 
-**Al momento de levantar el proyecto en un hostin se especifica la rama p branch**
+**Al momento de levantar el proyecto en un hostin se especifica la rama o branch**
 
 ```
 git push -u origin master
