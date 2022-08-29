@@ -49,5 +49,17 @@ git add (directorio)
 
 git commit o git commit -m ("name")
 
-git push (directorio)
+git remote add origin (url)
+```
+
+**Al momento de levantar el proyecto en un hostin se especifica la rama p branch**
+
+```
+git push -u origin master
+```
+
+**Despues de haberse subido por primera vez utilizamos**
+
+```
+git push
 ```
