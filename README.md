@@ -7,6 +7,8 @@ indice:
 > [Comandos basicos para configuracion global](#comandos-basicos-de-configuracion-global)
 >
 > [Comandos basicos de flujo de Git](#comandos-basicos-de-flujo-git)
+>
+> [Utilizando Git con un proyecto de React dirigido a GitHub Pages](#utilizando-git-con-un-proyecto-de-react-dirigido-a-github-pages)
 
 ---
 
