@@ -122,18 +122,17 @@ para vizualizar desde la terminal
 git (comando) -h
 ```
 
-o desde los archivos de la documentacion de git ya instalados 
+o desde los archivos de la documentacion de git ya instalados
 
 ```
 git help (comando)
 ```
 
-### para ignorar archivos 
+### para ignorar archivos
 
 creamos un archivo en nuestro proyecto con el nombre **.gitignore** dentro de el colocamos los nombres de los archivos/carpetas que no se deseen pasar por un flujo basico de git ademas de poder utilizar expresiones regulares para especificar esos elementos.
 
-
-### para clonar un repositorio 
+### para clonar un repositorio
 
 ```
 git clone (url del repositorio)
@@ -141,13 +140,13 @@ git clone (url del repositorio)
 
 ## Manejo de ramas
 
-### para crear una rama 
+### para crear una rama
 
 ```
 git branch (nombre de la rama)
 ```
 
-### para cambiar de rama 
+### para cambiar de rama
 
 ```
 git checkout (nombre de la rama)
@@ -158,33 +157,38 @@ git checkout (nombre de la rama)
 ```
 git branch -b (nombre de la rama )
 ```
-### para eliminar una rama 
+
+### para eliminar una rama
 
 ```
 git branch -d (nombre de la rama)
 ```
+
 ### para eliminar una rama de manera forzada
+
 ```
 git branch -D (nombre de la rama)
 ```
+
 ### para enlistar las ramas de tu repositorio
 
 ```
 git branch
 ```
 
-### para enlistar ramas que aun no han sido fusionadas 
+### para enlistar ramas que aun no han sido fusionadas
 
 ```
 git branch --no-merged
 ```
 
-### para enlistar ramas que hayan sido fucionadas 
+### para enlistar ramas que hayan sido fucionadas
+
 ```
 git branch --emerged
 ```
 
-### rebasar ramas 
+### rebasar ramas
 
 nos cambiamos a la rama que queremos rebasar
 
@@ -198,6 +202,13 @@ depues hacemos el rebasado con el siguiente comando indicando a la rama que se q
 git rebase (rama principal )
 ```
 
+### para una fusion de ramas
+
+tenemos que posicionarnos en nuestra rama pricipal y ejecutar
+
+```
+git merge (rama que se quiere fusionar)
+```
 
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
@@ -239,4 +250,3 @@ y despues
 ```
 npm run deploy
 ```
-
