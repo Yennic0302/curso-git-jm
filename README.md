@@ -114,6 +114,91 @@ comando para la eliminacion de rama o branch
 git push origin --delete (anterior rama)
 ```
 
+### para ayuda con la informacion de comandos podemos usar los siguientes comandos
+
+para vizualizar desde la terminal
+
+```
+git (comando) -h
+```
+
+o desde los archivos de la documentacion de git ya instalados 
+
+```
+git help (comando)
+```
+
+### para ignorar archivos 
+
+creamos un archivo en nuestro proyecto con el nombre **.gitignore** dentro de el colocamos los nombres de los archivos/carpetas que no se deseen pasar por un flujo basico de git ademas de poder utilizar expresiones regulares para especificar esos elementos.
+
+
+### para clonar un repositorio 
+
+```
+git clone (url del repositorio)
+```
+
+## Manejo de ramas
+
+### para crear una rama 
+
+```
+git branch (nombre de la rama)
+```
+
+### para cambiar de rama 
+
+```
+git checkout (nombre de la rama)
+```
+
+### para crear de rama y a la vez cambiarte a ella
+
+```
+git branch -b (nombre de la rama )
+```
+### para eliminar una rama 
+
+```
+git branch -d (nombre de la rama)
+```
+### para eliminar una rama de manera forzada
+```
+git branch -D (nombre de la rama)
+```
+### para enlistar las ramas de tu repositorio
+
+```
+git branch
+```
+
+### para enlistar ramas que aun no han sido fusionadas 
+
+```
+git branch --no-merged
+```
+
+### para enlistar ramas que hayan sido fucionadas 
+```
+git branch --emerged
+```
+
+### rebasar ramas 
+
+nos cambiamos a la rama que queremos rebasar
+
+```
+git checkout (rama-secundaria)
+```
+
+depues hacemos el rebasado con el siguiente comando indicando a la rama que se quiere rebasar
+
+```
+git rebase (rama principal )
+```
+
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
@@ -154,3 +239,4 @@ y despues
 ```
 npm run deploy
 ```
+
