@@ -40,7 +40,7 @@ En windows
 git config --global core.autocrlf true
 ```
 
-En linux o Mac Ox
+En linux o MacOS
 
 ```
 git config --global core.autocrlf input
