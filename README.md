@@ -108,7 +108,7 @@ git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/(nueva rama)
 
 desde las configuraciones de tu repositorio en el apartado de rama o branch cambiamos nuestra rama por default a la nueva rama, de esta manera al ejecutar el comando de eliminacion de la anterior rama que estaba tambien por default no retornara un error
 
-comando para la eliminacion de rama o branch
+comando para la eliminacion de rama o branch desde el remoto
 
 ```
 git push origin --delete (anterior rama)
