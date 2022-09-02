@@ -210,6 +210,30 @@ tenemos que posicionarnos en nuestra rama pricipal y ejecutar
 git merge (rama que se quiere fusionar)
 ```
 
+### para editar el ultimo commit pero sin editar el mensaje
+
+```
+git commit --amend --no-edit
+```
+
+### para editar el ultimo commit y el mensaje
+
+```
+git commit --amend -m "mesaje"
+```
+
+### para resetear un commit
+
+```
+git reset --hard HEAD-1
+```
+
+### para cambiar entre commits
+
+```
+git checkout (id-rama)
+```
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
