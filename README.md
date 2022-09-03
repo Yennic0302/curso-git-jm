@@ -352,3 +352,5 @@ y despues
 ```
 npm run deploy
 ```
+
+agregando contenido y mas
