@@ -240,6 +240,8 @@ para cambiar entre commits
 git checkout (id-commit)
 ```
 
+agregando linea
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
