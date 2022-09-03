@@ -108,13 +108,13 @@ git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/(nueva rama)
 
 desde las configuraciones de tu repositorio en el apartado de rama o branch cambiamos nuestra rama por default a la nueva rama, de esta manera al ejecutar el comando de eliminacion de la anterior rama que estaba tambien por default no retornara un error
 
-comando para la eliminacion de rama o branch
+comando para la eliminacion de rama o branch desde el remoto
 
 ```
 git push origin --delete (anterior rama)
 ```
 
-### para ayuda con la informacion de comandos podemos usar los siguientes comandos
+## para ayuda con la informacion de comandos podemos usar los siguientes comandos
 
 para vizualizar desde la terminal
 
@@ -122,69 +122,75 @@ para vizualizar desde la terminal
 git (comando) -h
 ```
 
-o desde los archivos de la documentacion de git ya instalados 
+o desde los archivos de la documentacion de git ya instalados
 
 ```
 git help (comando)
 ```
 
-### para ignorar archivos 
+## para ignorar archivos
 
 creamos un archivo en nuestro proyecto con el nombre **.gitignore** dentro de el colocamos los nombres de los archivos/carpetas que no se deseen pasar por un flujo basico de git ademas de poder utilizar expresiones regulares para especificar esos elementos.
 
-
-### para clonar un repositorio 
+## para clonar un repositorio
 
 ```
 git clone (url del repositorio)
 ```
 
-## Manejo de ramas
+## Crear y moverse entre ramas
 
-### para crear una rama 
+para crear una rama
 
 ```
 git branch (nombre de la rama)
 ```
 
-### para cambiar de rama 
+para cambiar de rama
 
 ```
 git checkout (nombre de la rama)
 ```
 
-### para crear de rama y a la vez cambiarte a ella
+para crear de rama y a la vez cambiarte a ella
 
 ```
 git branch -b (nombre de la rama )
 ```
-### para eliminar una rama 
+
+## Enlistacion e eliminacion de ramas
+
+para eliminar una rama
 
 ```
 git branch -d (nombre de la rama)
 ```
-### para eliminar una rama de manera forzada
+
+para eliminar una rama de manera forzada
+
 ```
 git branch -D (nombre de la rama)
 ```
-### para enlistar las ramas de tu repositorio
+
+para enlistar las ramas de tu repositorio
 
 ```
 git branch
 ```
 
-### para enlistar ramas que aun no han sido fusionadas 
+para enlistar ramas que aun no han sido fusionadas
 
 ```
 git branch --no-merged
 ```
 
-### para enlistar ramas que hayan sido fucionadas 
+para enlistar ramas que hayan sido fucionadas
+
 ```
 git branch --emerged
 ```
 
-### rebasar ramas 
+rebasar ramas
 
 nos cambiamos a la rama que queremos rebasar
 
@@ -198,6 +204,41 @@ depues hacemos el rebasado con el siguiente comando indicando a la rama que se q
 git rebase (rama principal )
 ```
 
+## fusion de ramas
+
+para una fusion de ramas
+
+tenemos que posicionarnos en nuestra rama pricipal y ejecutar
+
+```
+git merge (rama que se quiere fusionar)
+```
+
+## Modificacion de commits
+
+para editar el ultimo commit pero sin editar el mensaje
+
+```
+git commit --amend --no-edit
+```
+
+para editar el ultimo commit y el mensaje
+
+```
+git commit --amend -m "mesaje"
+```
+
+para resetear un commit
+
+```
+git reset --hard HEAD-1
+```
+
+para cambiar entre commits
+
+```
+git checkout (id-commit)
+```
 
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
@@ -239,4 +280,3 @@ y despues
 ```
 npm run deploy
 ```
-
