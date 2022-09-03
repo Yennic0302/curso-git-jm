@@ -240,6 +240,8 @@ para cambiar entre commits
 git checkout (id-commit)
 ```
 
+<<<<<<< HEAD
+
 ## Resgistro del historial
 
 para ver el historial
