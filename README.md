@@ -240,7 +240,9 @@ para cambiar entre commits
 git checkout (id-commit)
 ```
 
-agregando linea
+agregando
+
+pendejo
 
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
