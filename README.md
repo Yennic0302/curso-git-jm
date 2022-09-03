@@ -240,6 +240,76 @@ para cambiar entre commits
 git checkout (id-commit)
 ```
 
+## Resgistro del historial
+
+para ver el historial
+
+```
+git log
+```
+
+para ver el historial en una sola linea
+
+```
+git log --one-line
+```
+
+para guardar el historial en un archivo
+
+```
+git log > (nombre del archivo e extencion)
+```
+
+para mostrar historial con formato perzonalizado
+
+```
+git log --pretty=format:"%h - %an", %ar : %s"
+```
+
+para mostrar la cantidad que quieres de commits
+
+```
+git log -n (numero)
+```
+
+para colocar commits dentro de una fecha
+
+despues de una fecha
+
+```
+git log --after="2022-09-01 00:00:00"
+```
+
+antes de una fecha
+
+```
+git log --before="2022-09-01 00:00:00"
+```
+
+en un intervalo de fechas
+
+```
+git log --after="2022-09-01 00:00:00" --before="2022-09-02 00:00:00"
+```
+
+para mas informacion del historial, incluyendo interacciones, cambios, fuciones, eliminaciones, etc
+
+```
+git reflog
+```
+
+para ver cambios entre el staging y el working directory
+
+```
+git diff
+```
+
+para ver graficas de fusiones
+
+```
+git log --oneline --graph --all
+```
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
