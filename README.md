@@ -342,6 +342,18 @@ para resetear todo staging, HEAD working directory
 git reset --hard
 ```
 
+para resetear commit con commit
+
+```
+git reset (commit-id)
+```
+
+para resetear un commit de manera dura
+
+```
+git reset --hard (commit-id)
+```
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
