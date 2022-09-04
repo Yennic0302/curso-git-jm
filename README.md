@@ -240,8 +240,6 @@ para cambiar entre commits
 git checkout (id-commit)
 ```
 
-<<<<<<< HEAD
-
 ## Resgistro del historial
 
 para ver el historial
@@ -310,6 +308,38 @@ para ver graficas de fusiones
 
 ```
 git log --oneline --graph --all
+```
+
+para guardar la grafica en un archivo
+
+```
+git log --oneline --graph --all > (nombre del archivo y extencion)
+```
+
+## Reseteo del historial
+
+para saber el estado de los archivos
+
+```
+git status
+```
+
+para resetear el HEAD
+
+```
+git reset --soft
+```
+
+para resetear el HEAD y el staging
+
+```
+git reset mixed
+```
+
+para resetear todo staging, HEAD working directory
+
+```
+git reset --hard
 ```
 
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
