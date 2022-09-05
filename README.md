@@ -354,6 +354,44 @@ para resetear un commit de manera dura
 git reset --hard (commit-id)
 ```
 
+## Resetear repositorio como si fuera nuevo\
+
+respaldamos el archivo de configuracion con el siguiente comando
+
+```
+mv .git/config ~/saved_git_config
+```
+
+eliminamos la carpeta git con
+
+```
+rm -rf .git
+```
+
+iniciamos de nuevo git con los comandos de flujo basico de git
+
+```
+git init
+
+git branch -M rama
+
+git add (files to add)
+
+git commit -m (name of the commit)
+```
+
+agregamos el archivo respaldado de la configuracion
+
+```
+mv ~/saved_git_config .git/config
+```
+
+ejecutamos un push de manera forzada
+
+```
+git push --force origin main
+```
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
