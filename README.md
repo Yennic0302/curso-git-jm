@@ -499,6 +499,73 @@ para descargar el repositorio
 git pull origin gh-pages
 ```
 
+## trabajar en colaboracion
+
+-primero forkeamos el repositorio con el que tenemos que colaborar desde gitHub o otra plataforma de hostin
+
+-despues lo clonamos con
+
+```
+git clone (url)
+```
+
+## para configurar un repositorio de manera local
+
+```
+git config --local user.name (name)
+
+git config --local user.email (email)
+
+git config --local core.editor (editor --wait)
+
+```
+
+## trabajar en colaboracion parte 2
+
+para hacer cambios en el proyecto
+
+renombramos el origin de nuestra copia
+
+```
+git remote rename (old-name) (new-name)
+```
+
+agregamos el remoto del repositorio global
+
+```
+git remote add origin (url)
+```
+
+creamos una nueva rama
+
+```
+git checkout -b (new-branch)
+```
+
+hacemos push al remoto de nuestra copia
+
+```
+git push -u (old-name) (new-branch)
+```
+
+solicitamos un pull request desde github
+
+desde el repositorio principal se acepta el pull request
+
+hacemos un pull desde el repositorio principal
+
+desde el repositorio que hizo los cambios una vez aceptado eliminamos la rama donde se trabajo los cambios
+
+ejecutamos los siguientes comandos
+
+```
+git checkout main
+git pull origin main
+git push (new-name) main
+git branch -d (new-branch)
+git push (new-name) --delete (new-branch)
+```
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
