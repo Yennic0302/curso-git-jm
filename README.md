@@ -392,6 +392,70 @@ ejecutamos un push de manera forzada
 git push --force origin main
 ```
 
+## Remotes
+
+para mostrar los remotos
+
+```
+git remote
+```
+
+para ver los detalles del remoto
+
+```
+git remote -v
+```
+
+para agregar remotos
+
+```
+git remote add (name-origin) (url)
+```
+
+para renonbrar el origen
+
+```
+git remote rename (old-name)(new-name)
+```
+
+para remover el remoto
+
+```
+git remote remove (name-origin)
+```
+
+para descargar diferentes ramas del remoto
+
+```
+git checkout --track -b (remote-branch) origin/(remote-branch)
+```
+
+## Tags
+
+para enlistar etiquetas
+
+```
+git tag
+```
+
+para crear una etiqueta
+
+```
+git tag (num of version)
+```
+
+pata eliminar una etiqueta
+
+```
+git tag -d (num of version)
+```
+
+para mostrar la informacion de la etiqueta
+
+```
+git show (num of version)
+```
+
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
 
 primero en nuestro proyecto de react tenemos que descargar gh-pages
