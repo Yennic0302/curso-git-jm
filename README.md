@@ -155,7 +155,7 @@ git checkout (nombre de la rama)
 para crear de rama y a la vez cambiarte a ella
 
 ```
-git branch -b (nombre de la rama )
+git checkout -b (nombre de la rama )
 ```
 
 ## Enlistacion e eliminacion de ramas
@@ -231,7 +231,7 @@ git commit --amend -m "mesaje"
 para resetear un commit
 
 ```
-git reset --hard HEAD-1
+git reset --hard HEAD~1
 ```
 
 para cambiar entre commits
@@ -372,18 +372,20 @@ iniciamos de nuevo git con los comandos de flujo basico de git
 
 ```
 git init
-
-git branch -M rama
-
-git add (files to add)
-
-git commit -m (name of the commit)
 ```
 
 agregamos el archivo respaldado de la configuracion
 
 ```
 mv ~/saved_git_config .git/config
+```
+
+```
+git branch -M rama
+
+git add (files to add)
+
+git commit -m (name of the commit)
 ```
 
 ejecutamos un push de manera forzada
@@ -454,6 +456,47 @@ para mostrar la informacion de la etiqueta
 
 ```
 git show (num of version)
+```
+
+para hacer un push al remoto
+
+hay dos maneras
+
+la primera:
+
+```
+git add .
+git tag "v1.0.1"
+git commit -m "v1.0.1"
+git push origin (num of version)
+```
+
+la segunda:
+
+```
+git add .
+git tag -a "v1.0.1" -m "coomit con tags"
+git push --tags
+```
+
+## git con github pages
+
+primero creamos una rama llamada gh-pages
+
+```
+git branch gh-pages
+```
+
+y podemos subir nuestro codigo con un push
+
+```
+git push -u origin gh-pages
+```
+
+para descargar el repositorio
+
+```
+git pull origin gh-pages
 ```
 
 # Utilizando Git con un proyecto de React dirigido a GitHub Pages
